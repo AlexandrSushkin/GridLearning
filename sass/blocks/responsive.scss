@@ -1,0 +1,62 @@
+$lineColor: #2f2f2f;
+$responsiveText: #464646;
+
+.responsive_wrap {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background: url("../img/bg-two.png") left bottom no-repeat;
+}
+.responsive_info {
+  max-width: 360px;
+  margin-left: auto;
+}
+
+.responsive_title {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 20px 0;
+  position: relative;
+  &::before {
+    background-color: $lineColor;
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    left: 0;
+    top: -25px;
+    content: "";
+  }
+}
+.responsive_text {
+  font-size: 14px;
+  color: $responsiveText;
+  line-height: 1.429;
+  margin: 20px 0;
+}
+.responsive_list {
+  margin: 20px 0;
+}
+
+.responsive_button {
+  @include button($thirty) {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive_wrap {
+    background-image: none;
+  }
+  .responsive_info {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .responsive_wrap {
+    padding: 50px 0;
+  }
+}

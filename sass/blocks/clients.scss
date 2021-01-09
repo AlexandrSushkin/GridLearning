@@ -1,0 +1,46 @@
+$bgColor: #202020;
+.clients {
+  background-color: $bgColor;
+}
+.clients_wrap {
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+.clients_title {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center;
+  margin: 20px 05;
+  &::before {
+    background-color: $lineColor;
+    width: 70px;
+    height: 2px;
+    content: "";
+    display: block;
+    margin: 0 auto 25px;
+  }
+}
+.clients_text {
+  font-size: 14px;
+  color: $textColor;
+  line-height: 1.429;
+  text-align: center;
+  max-width: 555px;
+  margin: 25px auto;
+}
+.clients_carousel {
+  margin: 50px 0;
+  padding-left: 110px;
+  padding-right: 110px;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .clients_wrap {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
